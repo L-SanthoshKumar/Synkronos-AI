@@ -1,0 +1,9 @@
+flask
+flask-cors
+python-dotenv
+PyMuPDF
+spacy
+scikit-learn
+numpy
+requests
+pdfminer.six 
