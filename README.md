@@ -1,6 +1,11 @@
+________________SYNKRONOS-AI________________
+
+
+
 # 🚀 AI-Powered Job Recommendation Portal
 
-A comprehensive full-stack application that leverages artificial intelligence and machine learning to connect job seekers with their ideal job opportunities based on skills, experience, and preferences.
+Synkronos AI is an AI-powered job recommendation and talent-matching platform designed to connect candidates with the most suitable job opportunities. The system intelligently analyzes resumes, extracts relevant skills, compares them with job descriptions, and generates an accurate job-fit score. This helps both job seekers and recruiters make faster, smarter, and data-driven hiring decisions.
+
 
 ## ✨ Key Features
 
@@ -174,9 +179,6 @@ See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -214,9 +216,7 @@ python -m pytest tests/
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
 ## 🆘 Support
 
@@ -232,53 +232,5 @@ For support and questions, please open an issue on GitHub or contact the develop
 
 ---
 
-## **How to Fix**
-
-**Add a Contact Email field to your job posting form and payload.**
-
-### **Frontend Change (RecruiterDashboard.js)**
-
-1. **Add a field to your form:**
-   ```jsx
-   <div>
-     <label className="block text-sm font-medium mb-1">Contact Email *</label>
-     <input
-       type="email"
-       {...register("contactEmail", { required: "Contact email is required" })}
-       className="w-full border rounded px-3 py-2"
-       placeholder="Contact email"
-     />
-     {errors.contactEmail && <span className="text-red-500 text-sm">{errors.contactEmail.message}</span>}
-   </div>
-   ```
-
-2. **Update your jobData object in `onSubmitJob`:**
-   ```js
-   const jobData = {
-     // ...existing fields...
-     contact: {
-       email: data.contactEmail
-     },
-     // ...rest of fields...
-   };
-   ```
-
----
-
-## **Summary Table**
-
-| Field           | Value to Provide           |
-|-----------------|---------------------------|
-| contact.email   | A valid email address      |
-
----
-
-## **What To Do**
-
-1. **Add a Contact Email field to your form.**
-2. **Include it in the jobData as `contact: { email: ... }`.**
-3. **Try posting the job again.**
-
----
 
 If you want, I can make the exact code change for you—just let me know! 
